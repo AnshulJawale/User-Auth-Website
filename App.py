@@ -8,8 +8,8 @@ import sqlalchemy
 #todo Route the app to a url -> Define function that returns a valid html -> Run the App
 
 # App configurations
-app = Flask(__name__)                   #? An App with same name as filename.
-app.secret_key = "Anshul123"            #! Returns an error if secret key does not exist for a session
+app = Flask(__name__)                                  #? An App with same name as filename.
+app.secret_key = "Anshul123"                           #! Returns an error if secret key does not exist for a session
 app.permanent_session_lifetime = timedelta(hours=5)   #? Ends session after 5 dayss
 
 # App URLS
